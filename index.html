@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="/script.js"></script>
+  <title>Encriptador de texto</title>
 </head>
 <body>
-  
+  <header>
+    <h1 class="titulo">
+      Encriptador/Desencriptador de texto
+    </h1>
+  </header>
+  <main>
+    <form action="">
+      <div class="area-textos">
+        <textarea name="texto-original" class="textarea" id="input" cols="90%" rows="25" placeholder="Inserta el texto a cambiar..." onkeyup="this.value = this.value.toLowerCase()"></textarea>
+        <textarea name="texto-resultante" class="textarea" id="output" cols="90%" rows="25" >Resultado</textarea>
+      </div>
+      <div class="botones">
+        <button name="encryptButton" value="Encriptar">Encriptar</button>
+        <button name="decryptButton" value="Desencriptar">Desencriptar</button>
+
+        <button onclick='myFunction()'>Click</button>
+      </div>  
+    </form>
+  </main>
+  <footer></footer>
 </body>
 </html>
