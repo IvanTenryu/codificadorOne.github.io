@@ -4,18 +4,44 @@ function valid(f) {
 }
 
 /* Función para encriptar texto ingresado */
-var textoEncriptado;
-function encriptar() {
-  var textoOriginal = document.getElementById("#input").value;
-  textoEncriptado = window.btoa(textoOriginal);
-  document.getElementById("#output").value = textoEncriptado;
+var clavesEncriptado = {
+  "a": "ai",
+  "e": "enter",
+  "i": "imes",
+  "o": "ober",
+  "u": "ufat"
+};
+
+function encriptar(str) {
+  for (let char in clavesEncriptado) {
+      str = str.replace(new RegExp(char, 'g'), clavesEncriptado[char]);
+  }
+  return str;
 }
 
-/*
-var textoDesencriptado;
-function desencriptar() {
-  var textoEncriptado = document.getElementById("#input").value;
-  textoDesencriptado = window.btoa(textoEncriptado);
-  document.getElementById("#output").value = textoDesencriptado;
+function textoEncriptado() {
+  var str = document.getElementById('texto-original').value;
+  document.getElementById('texto-resultado').value = encriptar(str);
 }
-*/ 
+
+/* Función para desencriptar texto ingresado */
+var clavesDesencriptado = {
+  "ai": "a",
+  "enter": "e",
+  "imes": "i",
+  "ober": "o",
+  "ober": "o"
+};
+
+function desencriptar(str) {
+  for (let char in clavesDesencriptado) {
+      str = str.replace(new RegExp(char, 'g'), clavesDesencriptado[char]);
+  }
+  return str;
+}
+
+function textoDesencriptado() {
+  var str = document.getElementById('texto-original').value;
+  document.getElementById('texto-resultado').value = desencriptar(str);
+}
+
