@@ -53,3 +53,8 @@ function copyText() {
   navigator.clipboard.writeText(copyText.value);
   alert("Copied the text: " + copyText.value);
 }
+
+/* Función para mostrar correo electrónico */
+function mostrarCorreo() {
+  alert("ivanvalenciatec@gmail.com")
+}
