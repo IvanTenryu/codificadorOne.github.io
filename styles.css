@@ -43,7 +43,7 @@ header {
 
 .contenedor-texto, .contenedor-resultado {
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 1rem 1rem;
   vertical-align: middle;
   max-width: 100%;
@@ -91,7 +91,7 @@ footer p {
 .sobre-mi, .redes-sociales, .contacto {
   width: 30%;
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red;*/
   padding: 0rem 1rem;
   vertical-align: top;
 }
@@ -104,7 +104,7 @@ footer p {
 .redes {
   width: 40%;
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red;*/
   padding: 0rem 1rem;
   vertical-align: middle;
 }
