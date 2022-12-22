@@ -35,7 +35,7 @@
 
         <div class="contenedor-texto">
           <textarea id="texto-original" cols="75" rows="15" placeholder="Tu texto aquí..." required onkeyup="this.value = this.value.toLowerCase(), valid(this)"></textarea>
-          <br>
+          <br> 
           <button class="botones" id="encriptar" onclick="textoEncriptado()">Encriptar</button>
           <button class="botones" id="desencriptar" onclick="textoDesencriptado()">Desencriptar</button>
         </div>
@@ -43,7 +43,7 @@
         <div class="contenedor-resultado">
           <textarea id="texto-resultado" cols="75" rows="15" placeholder="Ve tu texto resultante aquí..."></textarea>
           <br>
-          <button class="botones" id="copiar">Copiar resultado</button>
+          <button class="botones" id="copiar" onclick="copyText()">Copiar resultado</button>
         </div>
 
       </div>

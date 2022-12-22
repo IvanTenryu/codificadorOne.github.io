@@ -45,3 +45,11 @@ function textoDesencriptado() {
   document.getElementById('texto-resultado').value = desencriptar(str);
 }
 
+/* Función para copiar texto resultante al porta papeles */
+function copyText() {
+  var copyText = document.getElementById("texto-resultado");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied the text: " + copyText.value);
+}
