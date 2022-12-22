@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Encriptador de texto</title>
 
   </head>
@@ -36,14 +38,14 @@
         <div class="contenedor-texto">
           <textarea id="texto-original" cols="75" rows="15" placeholder="Tu texto aquí..." required onkeyup="this.value = this.value.toLowerCase(), valid(this)"></textarea>
           <br> 
-          <button class="botones" id="encriptar" onclick="textoEncriptado()">Encriptar</button>
-          <button class="botones" id="desencriptar" onclick="textoDesencriptado()">Desencriptar</button>
+          <button class="botones" id="encriptar"  onclick="textoEncriptado()"><i class="fa fa-lock" aria-hidden="true"></i>Encriptar</button>
+          <button class="botones" id="desencriptar" onclick="textoDesencriptado()"><i class="fa fa-unlock" aria-hidden="true"></i>Desencriptar</button>
         </div>
 
         <div class="contenedor-resultado">
           <textarea id="texto-resultado" cols="75" rows="15" placeholder="Ve tu texto resultante aquí..."></textarea>
           <br>
-          <button class="botones" id="copiar" onclick="copyText()">Copiar resultado</button>
+          <button class="botones" id="copiar" onclick="copyText()"><i class="fa fa-clone" aria-hidden="true"></i>Copiar resultado</button>
         </div>
 
       </div>
@@ -65,18 +67,18 @@
           <h4>Redes sociales</h4>
           <div class="redes">
             <p>Linkedin</p>
-            <img class="logos-redes" src="img/linkedin-logo.png" alt="linkedin-logo">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
           </div>
           <div  class="redes">
             <p>Github</p>
-            <img class="logos-redes" src="img/github-logo.png" alt="github-logo">
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
           </div>
         </div>
 
         <div class="contacto">
           <h4>Contacto</h4>
           <p>Correo electrónico</p>
-          <img class="logos-contacto" src="img/gmail-logo.png" alt="gmail-logo">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
         </div>
 
       </div>

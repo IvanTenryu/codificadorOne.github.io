@@ -28,6 +28,7 @@ header {
 }
 
 .instrucciones p {
+  line-height: 1.5rem;
   font-size: smaller;
   font-style: italic;
 }
@@ -46,30 +47,38 @@ header {
 }
 
 .botones {
-  width: 150px;
+  width: 180px;
   height: 35px;
   font-size: 15px;
   font-weight: bold;
 }
 
+.contenedor .fa {
+  width: 35px;
+  padding-right: .1rem;
+}
+
 footer  {
   border: 1px solid black;
   margin: 1rem;
-  padding: 2rem 2rem;
+  padding: 0rem 2rem;
   text-align: center;
 }
 
 footer h3 {
   font-size: larger;
+  padding: 1rem 0;
 }
 
 footer h4 {
   font-size: medium;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 footer p {
   font-size: smaller;
+  padding-bottom: 1rem;
 }
 
 .sobre-mi, .redes-sociales, .contacto {
@@ -80,6 +89,11 @@ footer p {
   vertical-align: top;
 }
 
+.resumen {
+  font-style: italic;
+  line-height: 1.1rem;
+}
+
 .redes {
   width: 40%;
   display: inline-block;
@@ -88,10 +102,7 @@ footer p {
   vertical-align: middle;
 }
 
-.logos-redes {
-  width: 50px;
-}
-
-.logos-contacto {
-  width: 90px;
+footer .fa {
+  font-size: 4rem;
+  padding-bottom: 1rem;
 }
