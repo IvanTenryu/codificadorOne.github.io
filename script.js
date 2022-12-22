@@ -56,5 +56,5 @@ function copyText() {
 
 /* Función para mostrar correo electrónico */
 function mostrarCorreo() {
-  alert("ivanvalenciatec@gmail.com")
+  alert("ivanvalenciaps4@gmail.com")
 }
