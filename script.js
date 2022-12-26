@@ -5,9 +5,9 @@ function valid(f) {
 
 /* Función para encriptar texto ingresado */
 var clavesEncriptado = {
-  "a": "ai",
   "e": "enter",
   "i": "imes",
+  "a": "ai",
   "o": "ober",
   "u": "ufat"
 };
@@ -26,9 +26,9 @@ function textoEncriptado() {
 
 /* Función para desencriptar texto ingresado */
 var clavesDesencriptado = {
-  "ai": "a",
   "enter": "e",
   "imes": "i",
+  "ai": "a",
   "ober": "o",
   "ober": "o"
 };
