@@ -13,10 +13,13 @@ var clavesEncriptado = {
 };
 
 function encriptar(str) {
+  return str.replace(new RegExp(Object.keys(clavesEncriptado).join('|'), 'g'), c => clavesEncriptado[c]);
+  /*
   for (let char in clavesEncriptado) {
       str = str.replace(new RegExp(char, 'g'), clavesEncriptado[char]);
   }
   return str;
+  */
 }
 
 function textoEncriptado() {
@@ -30,14 +33,17 @@ var clavesDesencriptado = {
   "enter": "e",
   "imes": "i",
   "ober": "o",
-  "ober": "o"
+  "ufat": "u"
 };
 
 function desencriptar(str) {
+  return str.replace(new RegExp(Object.keys(clavesDesencriptado).join('|'), 'g'), c => clavesDesencriptado[c]);
+  /*
   for (let char in clavesDesencriptado) {
       str = str.replace(new RegExp(char, 'g'), clavesDesencriptado[char]);
   }
   return str;
+  */
 }
 
 function textoDesencriptado() {
